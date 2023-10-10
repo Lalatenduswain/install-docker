@@ -7,7 +7,10 @@ This script automates the process of installing Docker on an Ubuntu system. It f
 1. Make sure you have the necessary permissions to execute the script.
 2. Run the script using the following command:
 
-    ```bash
+    ```bash    
+    git clone https://github.com/Lalatenduswain/install-docker.git
+    cd install-docker
+    chmod +x install_docker.sh
     ./install_docker.sh
     ```
 
