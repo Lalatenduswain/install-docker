@@ -18,11 +18,17 @@ sudo apt install -y docker-ce
 sudo systemctl start docker
 sudo systemctl enable docker
 
-# Step 6: Verify Installation
-docker --version
+# Step 6: Install Docker Compose (latest stable version)
+DOCKER_COMPOSE_VERSION=$(curl -s https://api.github.com/repos/docker/compose/releases/latest | grep tag_name | cut -d '"' -f 4)
+sudo curl -L "https://github.com/docker/compose/releases/download/$DOCKER_COMPOSE_VERSION/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
 
-# Step 7: Manage Docker as a Non-root User (Optional)
+# Step 7: Verify Docker and Docker Compose Installation
+docker --version
+docker-compose --version
+
+# Step 8: Manage Docker as a Non-root User (Optional)
 sudo usermod -aG docker $USER
 echo "Please log out and log back in to apply the group membership changes."
 
-echo "Docker installation and setup completed."
+echo "Docker and Docker Compose installation and setup completed."
