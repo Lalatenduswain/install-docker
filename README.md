@@ -1,4 +1,4 @@
-# Docker CLI and not Docker Compose Installation Script for Ubuntu
+# Docker CLI and Docker Compose Installation Script for Ubuntu
 
 This script automates the process of installing Docker on an Ubuntu system. It follows the steps outlined below to ensure a smooth and hassle-free installation of Docker.
 
