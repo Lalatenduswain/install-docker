@@ -17,7 +17,7 @@ echo \
 
 # Step 4: Install Docker and Related Packages
 sudo apt update -y
-sudo apt install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+sudo apt install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose docker-compose-plugin
 
 # Step 5: Start and Enable Docker Service
 sudo systemctl enable docker --now
