@@ -1,72 +1,90 @@
-# Docker CLI and Docker Compose Installation Script for Ubuntu
+# 🚀 Docker CLI & Docker Compose Installation Script for Ubuntu
 
-This script automates the process of installing Docker on an Ubuntu system. It follows the steps outlined below to ensure a smooth and hassle-free installation of Docker.
+This script automates the installation of **Docker** and **Docker Compose** on an Ubuntu system. It ensures a **hassle-free** setup by following the best practices for installing Docker from its official repository.
 
-## Usage
+## 📌 Features
+- Installs the latest **Docker Engine** & **Docker Compose**
+- Configures Docker to start on boot
+- Adds your user to the **Docker group** (optional)
+- Ensures a secure installation using **official GPG keys**
+- Fully automated script with minimal user intervention
 
-1. Make sure you have the necessary permissions to execute the script.
-2. Run the script using the following command:
+---
 
-    ```bash    
-    git clone https://github.com/Lalatenduswain/install-docker.git
-    cd install-docker
-    chmod +x install_docker.sh
-    ./install_docker.sh
-    ```
+## 📖 Installation Guide
 
-3. Follow the prompts and instructions provided by the script.
+### **1️⃣ Clone the Repository**
+```bash
+git clone https://github.com/Lalatenduswain/install-docker.git
+cd install-docker
+```
 
-## Steps Covered by the Script
+### **2️⃣ Run the Script**
+```bash
+chmod +x install_docker.sh
+./install_docker.sh
+```
 
-### Step 1: Update Package Repositories
+### **3️⃣ Follow the Instructions**
+- The script will automatically install **Docker & Docker Compose**
+- **Log out and log back in** to apply group membership changes
 
-The script updates the package repositories to ensure the latest software versions are available.
+---
 
-### Step 2: Install Dependencies
+## 🔧 Steps Covered by the Script
 
-Installs the required dependencies, including `apt-transport-https`, `ca-certificates`, `curl`, and `software-properties-common`.
+### ✅ Step 1: Update Package Repositories
+Updates the system's package list to ensure the latest versions of software are installed.
 
-### Step 3: Add Docker Repository
+### ✅ Step 2: Install Dependencies
+Installs essential packages:
+- `ca-certificates`
+- `curl`
+- `gnupg`
 
-Adds Docker's official GPG key and repository to your system, allowing you to install Docker from official sources.
+### ✅ Step 3: Add Docker’s Official Repository
+Adds Docker’s **GPG key** and **repository** to ensure a trusted installation.
 
-### Step 4: Install Docker
+### ✅ Step 4: Install Docker & Docker Compose
+Installs the latest versions of:
+- `docker-ce` (Docker Community Edition)
+- `docker-ce-cli` (Docker Command Line Interface)
+- `containerd.io`
+- `docker-buildx-plugin`
+- `docker-compose-plugin`
 
-Updates the package list again and then installs Docker Community Edition.
+### ✅ Step 5: Start & Enable Docker
+Starts Docker immediately and enables it to launch on boot.
 
-### Step 5: Start and Enable Docker
+### ✅ Step 6: Verify Installation
+Checks that Docker and Docker Compose are installed correctly by displaying their versions.
 
-Starts the Docker service and sets it to start automatically on boot.
+### ✅ Step 7: Add User to Docker Group (Optional)
+Allows running Docker without `sudo` by adding your user to the **docker** group.
 
-### Step 6: Verify Installation
+---
 
-Verifies that Docker is installed by displaying its version.
+## ⚠️ Important Notes
+- **Compatible OS**: This script is designed for Ubuntu-based systems only.
+- **Use at Your Own Risk**: Always **review** the script before running it.
+- **Backup Recommended**: Before making system-wide changes, ensure you have **backups**.
 
-### Step 7: Manage Docker as a Non-root User (Optional)
+---
 
-If desired, adds your user to the `docker` group to run Docker commands without root privileges.
+## 💖 Support & Donations
+If you found this useful, you can support me by **buying me a coffee** ☕
 
-## Note
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-Support-blue?style=flat&logo=buy-me-a-coffee)](https://www.buymeacoffee.com/lalatendu.swain)
 
-- Ensure that you review the script and understand the actions it performs before executing it.
-- Always back up your important data before making system-wide changes.
-- This script is intended for Ubuntu systems. Make sure you're using a compatible version.
+---
 
-## Author
+## 📜 License
+This project is licensed under the **[MIT License](LICENSE)**. Feel free to use, modify, and distribute it as needed.
 
-Feel free to modify the README as needed to provide additional context, usage instructions, or any other relevant information.
+---
 
-**Note:** Make sure to have the necessary permissions and dependencies set up before running this script.
+### 🔗 Connect with Me
+🐦 Twitter: [@lalatendu_swain](https://twitter.com/lalatendu_swain)
+💼 LinkedIn: [Lalatendu Swain](https://linkedin.com/in/lalatenduswain)
 
-## Donations
-
-If you want to show your appreciation, you can donate via [Buy Me a Coffee](https://www.buymeacoffee.com/lalatendu.swain)
-
-## Disclaimer
-
-This script is provided as-is and may require modifications or updates based on your specific environment and requirements. Use it at your own risk. The authors of the script are not liable for any damages or issues caused by its usage.
-
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
+🚀 **Enjoy Dockerizing your applications!**
