@@ -84,7 +84,7 @@ This project is licensed under the **[MIT License](LICENSE)**. Feel free to use,
 ---
 
 ### 🔗 Connect with Me
-🐦 Twitter: [@lalatendu_swain](https://twitter.com/lalatendu_swain)
+🐦 Twitter: [@lalatendu_swain](https://x.com/lalatenduswain)
 💼 LinkedIn: [Lalatendu Swain](https://linkedin.com/in/lalatenduswain)
 
 🚀 **Enjoy Dockerizing your applications!**
