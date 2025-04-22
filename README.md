@@ -24,6 +24,10 @@ cd install-docker
 chmod +x install_docker.sh
 ./install_docker.sh
 ```
+```bash
+curl -sSL https://raw.githubusercontent.com/Lalatenduswain/install-docker/refs/heads/master/install_docker.sh | bash
+./install_docker.sh
+```
 
 ### **3️⃣ Follow the Instructions**
 - The script will automatically install **Docker & Docker Compose**
